@@ -33,7 +33,7 @@ Check out the Python file: **[Launch MS-DOS Simulator](ms-dos.py)**
 | `VER` | Displays the current simulated MS-DOS version string. |
 | `CLS` | Flushes the current display buffer and clears the screen terminal. |
 
-<pre>...There is more. Use 'help' in MS-DOS Simulator for more commands.</pre>
+<p>...There is more. Use 'help' in MS-DOS Simulator for more commands.</p>
 
 ---
 
