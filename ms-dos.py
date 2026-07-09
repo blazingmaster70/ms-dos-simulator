@@ -2,7 +2,7 @@ import time
 import os
 import winsound
 
-notice = input("WARNING: This is not affiliated with the official Microsoft or MS-DOS companies. This is a program that simulates MS-DOS commands. Press ENTER to continue: ")
+notice = input("WARNING: This is not affiliated with the official Microsoft or MS-DOS companies. This is a program that simulates MS-DOS commands For more information, visit www.github.com/blazingmaster70/ms-dos-simulator/readme.md. Press ENTER to continue: ")
 print()
 
 frequency = 896
