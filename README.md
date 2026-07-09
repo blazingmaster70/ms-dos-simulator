@@ -1,20 +1,18 @@
 # MS-DOS Terminal Simulator
 
-A Python-based MS-DOS terminal simulator that recreates the look and feel of the classic MS-DOS command prompt. It runs directly in your terminal and includes several built-in DOS-style commands.
+A Python-based MS-DOS terminal simulator that recreates the classic MS-DOS command-line experience. It runs directly in your terminal and includes a collection of DOS-style commands.
 
-**Windows is recommended.**
+**Windows Only**
 
 ---
 
-## 🐍 Python File
-
-Run the simulator:
+## 🐍 Running the Program
 
 ```bash
 python ms-dos.py
 ```
 
-If you have multiple Python versions installed:
+If needed:
 
 ```bash
 python3 ms-dos.py
@@ -24,12 +22,12 @@ python3 ms-dos.py
 
 ## Features
 
-- MS-DOS-style terminal interface
-- Classic boot sequence
+- Classic MS-DOS-style interface
+- Boot sequence
 - DOS-inspired commands
 - Simulated file system
-- Simple command prompt
-- No external libraries required (unless your code uses them)
+- Command prompt
+- Terminal-based application
 
 ---
 
@@ -38,23 +36,21 @@ python3 ms-dos.py
 | Command | Description |
 |---------|-------------|
 | `DIR` | Lists files and folders. |
-| `CD` | Changes the current directory (simulated). |
-| `TYPE` | Displays the contents of a text file. |
+| `CD` | Changes the current directory. |
+| `TYPE` | Displays the contents of a file. |
 | `CLS` | Clears the screen. |
 | `VER` | Displays the simulated MS-DOS version. |
-| `HELP` | Shows available commands. |
+| `HELP` | Shows the list of available commands. |
 | `MEM` | Displays simulated memory information. |
-
-*(The available commands depend on the features implemented in your Python code.)*
 
 ---
 
 ## Requirements
 
-- Python 3.8 or newer
-- Windows (recommended)
+- Python 3
+- Windows
 
-If your program imports extra modules such as `keyboard`, install them with:
+Install dependencies if required:
 
 ```bash
 pip install keyboard
@@ -62,18 +58,11 @@ pip install keyboard
 
 ---
 
-## Running
-
-Clone the repository:
+## Installation
 
 ```bash
 git clone <repository-url>
 cd <repository-folder>
-```
-
-Run:
-
-```bash
 python ms-dos.py
 ```
 
@@ -82,14 +71,12 @@ python ms-dos.py
 ## Project Structure
 
 ```
-ms-dos.py      # Main simulator
-README.md      # Project documentation
+ms-dos.py
+README.md
 ```
 
 ---
 
-## Notes
+## Disclaimer
 
-This project is a simulator made for fun and learning. It does **not** emulate a real MS-DOS system or run DOS software.
-
-Microsoft, MS-DOS, and Windows are trademarks of Microsoft Corporation. This project is not affiliated with or endorsed by Microsoft.
+This project is an MS-DOS simulator written in Python. It is not affiliated with or endorsed by Microsoft.
