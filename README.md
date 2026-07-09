@@ -9,7 +9,7 @@ Run it directly in the browser with zero dependencies or emulation overhead.
 ---
 
 ## 🖥️ Python File
-Check out the Python file: **[Launch MS-DOS Simulator](https://blazingmaster70.github.io/ms-dos-simulator)**
+Check out the Python file: **[Launch MS-DOS Simulator](ms-dos.py)**
 
 ---
 
