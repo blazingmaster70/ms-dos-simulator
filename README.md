@@ -1,42 +1,95 @@
 # MS-DOS Terminal Simulator
 
-A high-fidelity, hardware-free MS-DOS 6.22 environment simulation built entirely using standard web technologies. This project replicates the classic command-line experience, complete with an isolated virtual file system (VFS), authentic terminal rendering, and a suite of core legacy executable behaviors.
+A Python-based MS-DOS terminal simulator that recreates the look and feel of the classic MS-DOS command prompt. It runs directly in your terminal and includes several built-in DOS-style commands.
 
-**THIS IS WINDOWS ONLY**
-
-Run it directly in the browser with zero dependencies or emulation overhead.
+**Windows is recommended.**
 
 ---
 
-## 🖥️ Python File
-Check out the Python file: **[Launch MS-DOS Simulator](ms-dos.py)**
+## 🐍 Python File
+
+Run the simulator:
+
+```bash
+python ms-dos.py
+```
+
+If you have multiple Python versions installed:
+
+```bash
+python3 ms-dos.py
+```
 
 ---
 
-## ⚡ Key Features
+## Features
 
-* **Hardware-Free Execution:** Runs entirely inside the browser sandbox using vanilla TypeScript/JavaScript; no actual x86 hardware or underlying disk images required.
-* **Virtual File System (VFS):** Supports hierarchical structures (`CD`, `DIR`), file management, and reading contents via `TYPE`.
-* **Authentic CRT Aesthetics:** Styled using precise CSS layouts featuring monospace typography, retro scanlines, and a blinking system cursor block.
-* **Memory Management Diagnostics:** Includes a modeled `MEM` command mapping conventional, upper, and extended (XMS) structural layout pools.
+- MS-DOS-style terminal interface
+- Classic boot sequence
+- DOS-inspired commands
+- Simulated file system
+- Simple command prompt
+- No external libraries required (unless your code uses them)
 
 ---
 
-## 🛠️ Core Commands Supported
+## Supported Commands
 
 | Command | Description |
-| :--- | :--- |
-| `DIR` | Lists all files and subdirectories within the current path. |
-| `CD [dir]` | Changes the current working directory path within the VFS structure. |
-| `TYPE [file]` | Outputs the raw text content of a specified target file. |
-| `MEM` | Provides an architecture breakdown of simulated base/extended memory. |
-| `VER` | Displays the current simulated MS-DOS version string. |
-| `CLS` | Flushes the current display buffer and clears the screen terminal. |
+|---------|-------------|
+| `DIR` | Lists files and folders. |
+| `CD` | Changes the current directory (simulated). |
+| `TYPE` | Displays the contents of a text file. |
+| `CLS` | Clears the screen. |
+| `VER` | Displays the simulated MS-DOS version. |
+| `HELP` | Shows available commands. |
+| `MEM` | Displays simulated memory information. |
 
-<p>...There is more. Use 'help' in MS-DOS Simulator for more commands.</p>
+*(The available commands depend on the features implemented in your Python code.)*
 
 ---
 
-## 📂 Architecture Overview
+## Requirements
 
-The system architecture cleanly decouples user interface interaction from the underlying operational logic:
+- Python 3.8 or newer
+- Windows (recommended)
+
+If your program imports extra modules such as `keyboard`, install them with:
+
+```bash
+pip install keyboard
+```
+
+---
+
+## Running
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+Run:
+
+```bash
+python ms-dos.py
+```
+
+---
+
+## Project Structure
+
+```
+ms-dos.py      # Main simulator
+README.md      # Project documentation
+```
+
+---
+
+## Notes
+
+This project is a simulator made for fun and learning. It does **not** emulate a real MS-DOS system or run DOS software.
+
+Microsoft, MS-DOS, and Windows are trademarks of Microsoft Corporation. This project is not affiliated with or endorsed by Microsoft.
