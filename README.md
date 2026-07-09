@@ -1,47 +1,8 @@
 # MS-DOS Terminal Simulator
 
-A Python-based MS-DOS terminal simulator that recreates the classic MS-DOS command-line experience. It runs directly in your terminal and includes a collection of DOS-style commands.
+A Python program that simulates the Microsoft MS-DOS 6.22 command-line environment. It features a classic startup sequence, a DOS-style prompt, directory navigation, and a collection of simulated MS-DOS commands.
 
 **Windows Only**
-
----
-
-## 🐍 Running the Program
-
-```bash
-python ms-dos.py
-```
-
-If needed:
-
-```bash
-python3 ms-dos.py
-```
-
----
-
-## Features
-
-- Classic MS-DOS-style interface
-- Boot sequence
-- DOS-inspired commands
-- Simulated file system
-- Command prompt
-- Terminal-based application
-
----
-
-## Supported Commands
-
-| Command | Description |
-|---------|-------------|
-| `DIR` | Lists files and folders. |
-| `CD` | Changes the current directory. |
-| `TYPE` | Displays the contents of a file. |
-| `CLS` | Clears the screen. |
-| `VER` | Displays the simulated MS-DOS version. |
-| `HELP` | Shows the list of available commands. |
-| `MEM` | Displays simulated memory information. |
 
 ---
 
@@ -50,33 +11,100 @@ python3 ms-dos.py
 - Python 3
 - Windows
 
-Install dependencies if required:
-
-```bash
-pip install keyboard
-```
+The program uses Python's built-in `winsound` module, so it is designed to run on Windows.
 
 ---
 
-## Installation
+## Running
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
 python ms-dos.py
 ```
 
 ---
 
-## Project Structure
+## Features
+
+- Classic MS-DOS 6.22 boot sequence
+- DOS-style command prompt
+- PC speaker startup beep
+- Simulated directory structure
+- Directory navigation
+- Simulated file system
+- Directory listings
+- File viewing
+- Environment variable simulation
+- Volume label support
+- Memory information
+- Built-in help command
+- Screen clearing
+- DOS version information
+
+---
+
+## Directory Structure
 
 ```
-ms-dos.py
-README.md
+C:\
+├── DOS
+│   ├── HIMEM.SYS
+│   ├── MEM.EXE
+│   ├── FORMAT.COM
+│   ├── CHKDSK.EXE
+│   ├── EDIT.COM
+│   ├── XCOPY.EXE
+│   ├── ATTRIB.EXE
+│   ├── TREE.COM
+│   ├── LABEL.EXE
+│   ├── PATH.COM
+│   ├── SETVER.EXE
+│   ├── UNDELETE.EXE
+│   ├── DEFRAG.EXE
+│   ├── FDISK.EXE
+│   └── SYS.COM
+└── GAMES
+    └── DOOM
+        ├── DOOM.EXE
+        └── DEFAULT.CFG
 ```
 
 ---
 
-## Disclaimer
+## Supported Commands
 
-This project is an MS-DOS simulator written in Python. It is not affiliated with or endorsed by Microsoft.
+- ATTRIB
+- CD / CHDIR
+- CHKDSK
+- CLS
+- COPY
+- DATE
+- DEL / ERASE
+- DIR
+- ECHO
+- EXIT
+- FDISK
+- FORMAT
+- HELP
+- LABEL
+- MD / MKDIR
+- MEM
+- MOVE
+- PATH
+- PROMPT
+- RD / RMDIR
+- REN / RENAME
+- SET
+- SYS
+- TIME
+- TREE
+- TYPE
+- VER
+- VOL
+
+---
+
+## Notes
+
+This project is a simulator created for fun and learning. It does not emulate a real MS-DOS operating system or execute DOS programs.
+
+Microsoft, MS-DOS, and Windows are trademarks of Microsoft Corporation. This project is not affiliated with or endorsed by Microsoft.
