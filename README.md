@@ -32,6 +32,7 @@ Check out the Python file: **[Launch MS-DOS Simulator](ms-dos.py)**
 | `MEM` | Provides an architecture breakdown of simulated base/extended memory. |
 | `VER` | Displays the current simulated MS-DOS version string. |
 | `CLS` | Flushes the current display buffer and clears the screen terminal. |
+...There is more. Use 'help' in MS-DOS Simulator for more commands.
 
 ---
 
